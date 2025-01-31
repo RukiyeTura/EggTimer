@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Egg Timer</title>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+        <style>
+            .egg-timer-section {
+              background-color: rgba(255, 255, 255, 1);
+              display: flex;
+              flex-direction: column;
+              overflow: hidden;
+              align-items: center;
+              font-family: 'Pixelify Sans', sans-serif;
+              color: rgba(203, 137, 93, 1);
+              justify-content: center;
+              padding: 116px 80px;
+              min-height: 100vh;
+              margin: 0;
+            }
+            @media (max-width: 991px) {
+              .egg-timer-section {
+                padding: 0 20px 100px;
+              }
+            }
+            .timer-container {
+              border-radius: 75px;
+              background-color: rgba(255, 215, 188, 1);
+              display: flex;
+              width: 700px;
+              max-width: 100%;
+              flex-direction: column;
+              align-items: center;
+              padding: 14px 80px 24px;
+            }
+            @media (max-width: 991px) {
+              .timer-container {
+                padding: 0 20px;
+              }
+            }
+            .timer-content {
+              display: flex;
+              width: 472px;
+              max-width: 100%;
+              flex-direction: column;
+              align-items: center;
+            }
+            .egg-timer-title {
+              font-size: 75px;
+              font-weight: 600;
+              line-height: 1.3;
+              align-items: center;
+            }
+            @media (max-width: 991px) {
+              .egg-timer-title {
+                max-width: 100%;
+                font-size: 40px;
+              }
+            }
+            .timer-img {
+              aspect-ratio: 0.93;
+              object-fit: contain;
+              object-position: center;
+              width: 320px;
+              max-width: 100%;
+            }
+            .button-container {
+              border-radius: 6px;
+              background-color: rgba(203, 137, 93, 1);
+              display: flex;
+              margin-top: 17px;
+              width: 185px;
+              max-width: 100%;
+              flex-direction: column;
+              font-size: 30px;
+              font-weight: 500;
+              white-space: nowrap;
+              text-align: center;
+              letter-spacing: 0.1px;
+              line-height: 1;
+              justify-content: center;
+              padding: 3px;
+              cursor: pointer;
+            }
+            @media (max-width: 991px) {
+              .button-container {
+                white-space: initial;
+              }
+            }
+            .start-button {
+              border-radius: 6px;
+              background-color: rgba(255, 238, 227, 1);
+              padding: 21px 19px;
+            }
+            @media (max-width: 991px) {
+              .start-button {
+                white-space: initial;
+                padding: 0 20px;
+              }
+            }
+        </style>
+    </head>
+    <body style="margin: 0;">
+        <div class="egg-timer-section">
+            <div class="timer-container">
+                <div class="timer-content">
+                    <div class="egg-timer-title">Egg Timer</div>
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/27ac099f7af3148410afbb3fc577942049234aa6f24cc908413c2b8843c459ec" alt="Egg timer image" class="timer-img" />
+                    <div class="button-container" onclick="window.location.href='timer.html'">
+                        <div class="start-button">Start</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 
